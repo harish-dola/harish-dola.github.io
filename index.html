@@ -31,7 +31,7 @@
        application. For more information, see:
        https://developers.google.com/web/fundamentals/primers/service-workers -->
   <script>
-    var serviceWorkerVersion = null;
+    var serviceWorkerVersion = '1560376074';
     var scriptLoaded = false;
     function loadMainDartJs() {
       if (scriptLoaded) {
@@ -94,5 +94,29 @@
       loadMainDartJs();
     }
   </script>
+
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-firestore.js"></script>
+  <!-- Firebase Auth SDK -->
+  <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-auth.js"></script>
+  <script>
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig={
+    apiKey: "AIzaSyDya8CkwqQ1GtlzbpwUJ58BvgXbiDX99W0",
+    authDomain: "curiosiity.firebaseapp.com",
+    projectId: "curiosiity",
+    storageBucket: "curiosiity.appspot.com",
+    messagingSenderId: "537153071",
+    appId: "1:537153071:web:d79487d4ca2c38eafc40da",
+    measurementId: "G-HDN67QQSLV"
+    }
+
+    firebase.initializeApp(firebaseConfig)
+  </script>
+
+
+  <script src="main.dart.js" type="application/javascript"></script>
+
+
 </body>
 </html>
